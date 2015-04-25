@@ -60,3 +60,10 @@ end)
 minetest.register_on_leaveplayer(function(player)
 	armor_stand[name] = nil --free mem
 end)
+
+minetest.register_craft({
+	output = "armor_stand:armor_stand",
+	recipe = {
+		{"group:wood", "shields:shield_steel"}
+	}
+})
